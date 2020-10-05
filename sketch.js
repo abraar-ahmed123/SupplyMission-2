@@ -15,7 +15,9 @@ function setup() {
 	createCanvas(800, 700);
 	rectMode(CENTER);
 
-	
+	packageSprite=createSprite(width/2, 80, 10,10);
+	packageSprite.addImage(packageIMG)
+	packageSprite.scale=0.2
 
 	locationSprite1=createSprite(450, 630, 20,80);
 	locationSprite1.shapeColor=("orange");
@@ -33,9 +35,7 @@ function setup() {
 	helicopterSprite.addImage(helicopterIMG)
 	helicopterSprite.scale=0.6
 
-	packageSprite=createSprite(width/2, 80, 10,10);
-	packageSprite.addImage(packageIMG)
-	packageSprite.scale=0.2
+	
 
 	
 	groundSprite=createSprite(width/2, height-35, width,10);
